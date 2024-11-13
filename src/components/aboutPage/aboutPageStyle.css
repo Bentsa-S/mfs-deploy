@@ -1,0 +1,91 @@
+/* AboutPage.css */
+.about-page {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    background-color: #000; /* Чорний фон тільки для цієї сторінки */
+    color: #fff; /* Білий текст тільки для цієї сторінки */
+  }
+  
+  .about-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    scroll-snap-align: start;
+    background-color: #000; /* Чорний фон для кожної секції */
+    border-bottom: 2px solid #333;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .about-image {
+    flex: 1;
+    background-color: #444; /* Сірий фон для блоку з зображенням */
+    height: 80%;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Стилі для тексту */
+  .about-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .about-subtitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .about-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #fff;
+  }
+  
+  .about-list {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #fff;
+    padding-left: 20px;
+  }
+  
+  .about-list li {
+    margin-bottom: 10px;
+  }
+  
+  .about-closing {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #fff;
+  }
+    
+  /* Адаптивність */
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+    }
+  
+    .about-title, .about-subtitle {
+      font-size: 28px;
+    }
+  
+    .about-paragraph, .about-list {
+      font-size: 16px;
+    }
+  
+    .about-closing {
+      font-size: 18px;
+    }
+  }
+  

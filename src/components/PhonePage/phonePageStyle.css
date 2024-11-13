@@ -1,0 +1,154 @@
+/* PhonePage.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .phone-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh; /* Займає всю висоту екрану */
+    width: 100%;
+  }
+  
+  .phone-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%; /* Ширина 100% екрану */
+    max-width: 1200px; /* Максимальна ширина для великих екранів */
+    margin-bottom: 30px;
+  }
+  
+  .phone-image-section {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .phone-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .phone-details-section {
+    flex: 1.5;
+    padding-left: 30px;
+  }
+  
+  .phone-details-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .phone-specs {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .phone-specs li {
+    margin-bottom: 12px;
+  }
+  
+  .phone-specs li ul {
+    list-style: none;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  
+  .phone-availability {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .phone-price {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  .phone-actions {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .cart-button-page, .favorite-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .cart-button-page:hover, .favorite-button:hover {
+    background-color: #555;
+  }
+  
+  .favorite-button.active {
+    background-color: red;
+  }
+  
+  /* Опис телефону */
+  .phone-description {
+    width: 100%; /* Ширина 100% для опису */
+    max-width: 1200px; /* Максимальна ширина опису */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    line-height: 1.8; /* Додаємо більше відстані між рядками */
+  }
+  
+  .phone-description h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .phone-description p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Адаптивність для мобільних пристроїв */
+  @media (max-width: 768px) {
+    .phone-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .phone-image-section {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .phone-details-section {
+      padding-left: 0;
+    }
+  
+    .phone-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  
